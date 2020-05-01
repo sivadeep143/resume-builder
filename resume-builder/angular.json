@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "resume-builder"
+    }
+  },
+  "defaultProject": "resume-builder",
+  "cli": {
+    "analytics": false
+  }
 }
