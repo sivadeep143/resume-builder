@@ -1,1 +1,25 @@
-<p>timeline works!</p>
+<div class="input-area">
+  <input type="date" [(ngModel)]="date"><br>
+  <!-- replace with tinymce.init -->
+  <editor apiKey="eglo5ndkurtafmbca03dtfqudyf5mug1uv6iibt4gxwxvb54" [(ngModel)]="editorData" [init]="{
+    width: 600,
+    plugins: [
+      'lists'
+    ],
+    toolbar:
+      'formatselect | bold italic backcolor | \
+      alignleft aligncenter alignright alignjustify | \
+      bullist numlist outdent indent | removeformat | undo redo |  help'
+  }"></editor>
+  <button (click)="addEvent()">add event</button>
+
+</div>
+<div class="timeline-container">
+<ul>
+  <li *ngFor="let card of cards" class="event-card">
+    <app-event-card [data]="card"></app-event-card>
+  </li>
+</ul>
+</div>
+
+

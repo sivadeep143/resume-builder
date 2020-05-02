@@ -1,0 +1,37 @@
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 400px;
+  margin-left: 150px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 5px 16px;
+  height: 155px;
+  overflow: hidden;
+}
+
+.card-div {
+  background-color: cornsilk;
+}
+
+.date {
+  background-color: burlywood;
+  width: fit-content;
+}
+
+.line {
+  content: '';
+  border: 1px solid black;
+  height: 172px;
+  float: left;
+  margin-left: 80px;
+  margin-top: -15px;
+}
