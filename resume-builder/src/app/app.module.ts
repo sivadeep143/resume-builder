@@ -8,6 +8,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { CreateResumeComponent } from './create-resume/create-resume.component';
 import { EventCardComponent } from './event-card/event-card.component';
 import { EditorModule } from '@tinymce/tinymce-angular';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EditorModule } from '@tinymce/tinymce-angular';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    EditorModule
+    EditorModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

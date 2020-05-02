@@ -12,6 +12,12 @@
       bullist numlist outdent indent | removeformat | undo redo |  help'
   }"></editor>
   <button (click)="addEvent()">add event</button>
+  <ul>
+    <h2>My skills</h2>
+    <li *ngFor="let skill of skills">
+      {{skill}}
+    </li>
+  </ul>
 
 </div>
 <div class="timeline-container">
